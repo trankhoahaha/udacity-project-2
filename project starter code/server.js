@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import { filterImageFromURL, deleteLocalFiles } from "./util/util.js";
+import authenticateRequest from "./auth.js";
 
 // Init the Express application
 const app = express();
@@ -29,7 +30,7 @@ app.use(bodyParser.json());
 
 //! END @TODO1
 
-app.get("/filteredimage", async (req, res) => {
+app.get("/filteredimage", authenticateRequest, async (req, res) => {
   const imageUrl = req.query.image_url;
 
   if (!imageUrl) {

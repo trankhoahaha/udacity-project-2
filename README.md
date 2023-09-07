@@ -22,3 +22,8 @@ Successful URL responses should have a 200 code. Ensure that you include error c
 ## License
 
 [License](LICENSE.txt)
+
+## EB_URL
+http://my-app-dev22.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+type_auth: Bearer
+token: Sz4S/lsI753/r2ZTpTpLGzp5k5z8jNDO
